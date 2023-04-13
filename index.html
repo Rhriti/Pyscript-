@@ -7,7 +7,7 @@
 
 <body>
     <py-script>
-    def stack(self, pushed , popped) :
+    def stack( pushed , popped) :
         i=0
         new=[]
         for pop in popped:
@@ -31,6 +31,7 @@
         if len(new)==0:
             return True
         return False
+
     print(stack([1,2,3,4,5],[4,5,3,2,1]))
     
     </py-script>
