@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+
+<body>
+    <py-script>
+        def stack(self, pushed , popped) :
+        i=0
+        new=[]
+        for pop in popped:
+        if new:
+        if new[-1]==pop:
+        new.pop()
+        continue
+        f=False
+        while i<=len(pushed)-1: if pushed[i]==pop: f=True i=i+1 break else: new.append(pushed[i]) i+=1 if f is False:
+            return False if len(new)==0: return True return False print(stack([1,2,3,4,5],[4,5,3,2,1])) </py-script>
+</body>
+
+</html>
